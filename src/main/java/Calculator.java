@@ -8,4 +8,9 @@ public class Calculator {
 
         return false;
     }
+
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
 }
