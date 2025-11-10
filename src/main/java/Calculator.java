@@ -1,10 +1,9 @@
 public class Calculator {
 
-    public static boolean pyth (double a, double b, double c){
-        if (a * a + b * b == c * c) {
-            return true;
-        }
+    public static void welcome() {
+        System.out.println("Welcome to Calculator");
+        System.out.println("Welcome to Calculator2");
+        scout
 
-        return false;
     }
 }
