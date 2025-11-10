@@ -2,25 +2,37 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
-    @org.junit.jupiter.api.Test
-    void pythCorrect() {
-        //input
-        double a = 3;
-        double b = 4;
-        double c = 5;
-        boolean exp = true;
+    void firstMultiply() {
+        System.out.println("testing 2,3 and 4");
+        //arrange , input
+        int a = 2;
+        int b = 3;
+        int c = 4;
+        int exp = 24;
 
-        //kald
-        boolean actual = Calculator.pyth(a, b, c);
-
-        //tjek
+// act
+        int actual = Calculator.gange(a, b, c);
+        //assert
         assertEquals(exp, actual);
-    }
 
+
+    }
 
     @org.junit.jupiter.api.Test
-    void pythWrong() {
-    }
+    void secondMultiply() {
+        System.out.println("testing 6,9 and 15");
+        //arrange , input
+        int a = 6;
+        int b = 9;
+        int c = 15;
+        int exp = 810;
 
+// act
+        int actual = Calculator.gange(a,b,c);
+        //assert
+        assertEquals(exp,actual);
+
+
+    }
 }
 
